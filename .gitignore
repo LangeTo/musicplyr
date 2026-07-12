@@ -1,3 +1,7 @@
+# User ignores
+README.html
+
+##### GitHub default R project ignores
 # History files
 .Rhistory
 .Rapp.history

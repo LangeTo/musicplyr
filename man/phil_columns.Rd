@@ -4,12 +4,14 @@
 \alias{phil_columns}
 \title{Phil columns}
 \usage{
-phil_columns(.data, ...)
+phil_columns(.data, value, play = FALSE)
 }
 \arguments{
-\item{.data}{A data frame to be modified.}
+\item{.data}{A data frame to add a new column to.}
 
-\item{...}{Additional arguments to be passed to the mutate function.}
+\item{value}{The value to fill the new column with.}
+
+\item{play}{Logical, whether to play the track on Spotify.}
 }
 \description{
 Phil a column!

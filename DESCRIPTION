@@ -1,9 +1,9 @@
 Package: musicplyr
-Title: Play music in your head while programming.
+Title: Play music while programming
 Version: 0.0.0.9000
 Authors@R: 
     person("Tobias", "Hundertmark", , "Tobias.100mark@outlook.de", role = c("aut", "cre"))
-Description: Play music in your head while programming.
+Description: Turns your code into music and play it from spotify.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

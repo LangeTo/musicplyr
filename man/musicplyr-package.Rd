@@ -4,9 +4,9 @@
 \name{musicplyr-package}
 \alias{musicplyr}
 \alias{musicplyr-package}
-\title{musicplyr: Play music in your head while programming}
+\title{musicplyr: Play music while programming}
 \description{
-Play music in your head while programming
+Turns your code into music and play it from spotify.
 }
 \author{
 \strong{Maintainer}: Tobias Hundertmark \email{Tobias.100mark@outlook.de}
