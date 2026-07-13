@@ -53,10 +53,18 @@ play_music <- function(track) {
         ignore.stdout = TRUE,
         ignore.stderr = TRUE
       ),
-      Windows = shell(
-        paste0("start spotify:", track),
-        wait = FALSE
-      )
+      # Of course, Windows needs a special treatment ...
+      Windows = {
+        bat <- system.file("play_on_windows.bat", package = "musicplyr")
+
+        track_id <- sub("spotify:track:", "", track)
+
+        system2(
+          bat,
+          args = track_id,
+          wait = FALSE
+        )
+      }
     ),
     error = function(e) invisible()
   )

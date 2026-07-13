@@ -72,7 +72,7 @@ system_off_down <- function() {
   )
 
   off_down <- tolower(readline(
-    prompt = "Sure you want to see system off/down live? [y/n]: "
+    prompt = "Are you sure you want to see system off/down live? [y/n]: "
   ))
 
   while (!off_down %in% c("y", "n")) {
@@ -89,13 +89,14 @@ system_off_down <- function() {
       Sys.sleep(10)
       message("This is System off/down live ...")
       Sys.sleep(10)
-      message("Yes, it still is ...")
+      message("Yes, it's a long concert ...")
       Sys.sleep(10)
-      message("Impressive, isn't it?")
-      Sys.sleep(10000000)
+      message("One more song, one more song!")
+      Sys.sleep(10)
+      q("no")
     }
   } else {
-    message("Are you sure? You can always run `system_off_down()` again.")
+    message("Ok, but you can always run `system_off_down()` again.")
   }
 }
 
