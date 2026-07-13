@@ -57,11 +57,9 @@ play_music <- function(track) {
       Windows = {
         bat <- system.file("play_on_windows.bat", package = "musicplyr")
 
-        track_id <- sub("spotify:track:", "", track)
-
         system2(
           bat,
-          args = track_id,
+          args = track,
           wait = FALSE
         )
       }

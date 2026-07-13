@@ -145,13 +145,13 @@ billy_idle <- function(val) {
     "
   )
 
+  play_music("spotify:track:3rQfYDjgpRy5LFlClpPQW9")
+
   if (is.logical(val)) {
     if (isTRUE(val)) {
       TRUE
     }
   }
-
-  play_music("spotify:track:3rQfYDjgpRy5LFlClpPQW9")
 }
 
 #' @title SlayR
@@ -189,6 +189,8 @@ rolling_a_stone <- function() {
     "
   )
 
+  play_music("spotify:track:2PzU4IB8Dr6mxV3lHuaG34")
+
   message(sample.int(1000, 1))
   message("...")
   Sys.sleep(1)
@@ -202,6 +204,23 @@ rolling_a_stone <- function() {
   val <- sample.int(1000, 1)
   message("Your satisfaction is: ", val)
   set.seed(val)
+}
 
-  play_music("spotify:track:2PzU4IB8Dr6mxV3lHuaG34")
+#' @title Linkin pack
+#'
+#' @description
+#' Check the links of a package to other packages.
+#'
+#' @export
+linkin <- function(pack) {
+  df <- as.data.frame(installed.packages())
+
+  if (!pack %in% df$Package) {
+    message("Pack not linked ... ")
+    return(invisible())
+  }
+
+  message(paste0(pack, " DEPENDS ON:\n", df$Depends[df$Package == pack], "\n"))
+  message(paste0(pack, " IMPORTS:\n", df$Imports[df$Package == pack], "\n"))
+  message(paste0(pack, " SUGGESTS:\n", df$Suggests[df$Package == pack]))
 }
