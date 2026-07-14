@@ -11,4 +11,4 @@ RoxygenNote: 7.3.3
 Depends: R (>= 4.5)
 Imports: 
     dplyr,
-    magrittr
+    utils

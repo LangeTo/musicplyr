@@ -211,6 +211,8 @@ rolling_a_stone <- function() {
 #' @description
 #' Check the links of a package to other packages.
 #'
+#' @param pack A package name.
+#'
 #' @export
 linkin <- function(pack) {
   df <- as.data.frame(installed.packages())

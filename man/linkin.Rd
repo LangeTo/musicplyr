@@ -6,6 +6,9 @@
 \usage{
 linkin(pack)
 }
+\arguments{
+\item{pack}{A package name.}
+}
 \description{
 Check the links of a package to other packages.
 }
