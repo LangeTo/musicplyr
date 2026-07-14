@@ -3,7 +3,7 @@
 #' @description
 #' Liszt all files in a directory.
 #'
-#' @param ... Arguments passed to `list.files()`.
+#' @param ... Arguments passed to \code{\link[base]{list.files}()}.
 #'
 #' @export
 liszt.files <- function(...) {

@@ -9,7 +9,7 @@ bruno_sparse(.data, ..., play = FALSE)
 \arguments{
 \item{.data}{The dataframe of a vector to subsample from.}
 
-\item{...}{Additional arguments passed to \code{slice_sample()} or \code{sample()}.}
+\item{...}{Additional arguments passed to \code{\link[dplyr]{slice_sample}()} or \code{\link[base]{sample}()}.}
 
 \item{play}{Logical, whether to play the track on Spotify.}
 }

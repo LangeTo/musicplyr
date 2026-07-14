@@ -7,7 +7,7 @@
 liszt.files(...)
 }
 \arguments{
-\item{...}{Arguments passed to \code{list.files()}.}
+\item{...}{Arguments passed to \code{\link[base]{list.files}()}.}
 }
 \description{
 Liszt all files in a directory.

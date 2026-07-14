@@ -7,7 +7,7 @@
 tupack(...)
 }
 \arguments{
-\item{...}{Arguments passed to \code{zip()}.}
+\item{...}{Arguments passed to \code{\link[utils]{zip}()}.}
 }
 \description{
 Tupack files in an archive.

@@ -3,7 +3,7 @@
 #' @description
 #' Tupack files in an archive.
 #'
-#' @param ... Arguments passed to `zip()`.
+#' @param ... Arguments passed to \code{\link[utils]{zip}()}.
 #'
 #' @export
 tupack <- function(...) {

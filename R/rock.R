@@ -1,59 +1,3 @@
-#' @title Fill Collins
-#'
-#' @description
-#' Fill a collin!
-#'
-#' @param .data A data frame to add a new column to.
-#'
-#' @param value The value to fill the new column with.
-#'
-#' @param play Logical, whether to play the track on Spotify.
-#'
-#' @export
-fill_collins <- function(.data, value, play = FALSE) {
-  message(
-    "
-    #####################################
-    I can feel coming in the air tonight!
-    #####################################
-    "
-  )
-
-  if (play) {
-    play_music("spotify:track:6mYXXXgFZZmk2mgejwSwdN")
-  }
-
-  mutate(.data, FilledCollin = value)
-}
-
-#' @title Phil columns
-#'
-#' @description
-#' Phil a column!
-#'
-#' @param .data A data frame to add a new column to.
-#'
-#' @param value The value to fill the new column with.
-#'
-#' @param play Logical, whether to play the track on Spotify.
-#'
-#' @export
-phil_columns <- function(.data, value, play = FALSE) {
-  message(
-    "
-    #####################################
-    I can feel coming in the air tonight!
-    #####################################
-    "
-  )
-
-  if (play) {
-    play_music("spotify:track:6mYXXXgFZZmk2mgejwSwdN")
-  }
-
-  mutate(.data, Philed_Column = value)
-}
-
 #' @title System off/down
 #'
 #' @description
@@ -107,7 +51,7 @@ system_off_down <- function() {
 #'
 #' @param .data A data frame to be slizzed.
 #'
-#' @param ... Additional arguments passed to `slice_head()`.
+#' @param ... Additional arguments passed to \code{\link[dplyr]{slice_head}()}.
 #'
 #' @param play Logical, whether to play the track on Spotify.
 #'
@@ -222,7 +166,63 @@ linkin <- function(pack) {
     return(invisible())
   }
 
+  play_music("spotify:track:3fjmSxt0PskST13CSdBUFx")
+
   message(paste0(pack, " DEPENDS ON:\n", df$Depends[df$Package == pack], "\n"))
   message(paste0(pack, " IMPORTS:\n", df$Imports[df$Package == pack], "\n"))
   message(paste0(pack, " SUGGESTS:\n", df$Suggests[df$Package == pack]))
+}
+
+#' @title Axl Rows
+#'
+#' @description
+#' Axl-row-wise operations for your data frame.
+#'
+#' @param .data A data frame to apply axl-row-wise operations on.
+#'
+#' @param ... Additional arguments passed to \code{\link[dplyr]{rowwise}()}.
+#'
+#' @param play Logical, whether to play the track on Spotify.
+#'
+#' @export
+axl_rows <- function(.data, ..., play = FALSE) {
+  message(
+    "
+    #####################################
+    You know where you are?
+
+    You're in the jungle, baby!
+    #####################################
+    "
+  )
+
+  if (play) {
+    play_music("spotify:track:0G21yYKMZoHa30cYVi1iA8")
+  }
+
+  rowwise(.data, ...)
+}
+
+#' @title Dir straights
+#'
+#' @description
+#' Straighten your directory path.
+#'
+#' @param dir A directory path to be normalized.
+#'
+#' @param ... Additional arguments passed to \code{\link[base]{normalizePath}()}.
+#'
+#' @export
+dir_straights <- function(dir, ...) {
+  message(
+    "
+    #####################################
+    Now look at them yo-yos, that's the way you do it.
+    #####################################
+    "
+  )
+
+  play_music("spotify:track:4nFNJmjfgBF7jwv2oBC45b")
+
+  normalizePath(dir, ...)
 }

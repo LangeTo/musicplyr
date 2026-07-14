@@ -5,7 +5,7 @@
 #'
 #' @param .data The dataframe of a vector to subsample from.
 #'
-#' @param ... Additional arguments passed to `slice_sample()` or `sample()`.
+#' @param ... Additional arguments passed to \code{\link[dplyr]{slice_sample}()} or \code{\link[base]{sample}()}.
 #'
 #' @param play Logical, whether to play the track on Spotify.
 #'

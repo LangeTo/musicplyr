@@ -9,7 +9,7 @@ slizz_top(.data, ..., play = FALSE)
 \arguments{
 \item{.data}{A data frame to be slizzed.}
 
-\item{...}{Additional arguments passed to \code{slice_head()}.}
+\item{...}{Additional arguments passed to \code{\link[dplyr]{slice_head}()}.}
 
 \item{play}{Logical, whether to play the track on Spotify.}
 }

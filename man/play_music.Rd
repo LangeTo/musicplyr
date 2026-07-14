@@ -7,7 +7,7 @@
 play_music(track)
 }
 \arguments{
-\item{track}{A Spotify track in this format: \code{"spotify:track:6mYXXXgFZZmk2mgejwSwdN?si"}}
+\item{track}{A Spotify track in this format: \code{"spotify:track:6mYXXXgFZZmk2mgejwSwdN"}}
 }
 \description{
 Start to play a song on your local Spotify from the R console. Standalone this is pretty useless, but makes total sense in \strong{musicplyr}...

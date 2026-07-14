@@ -3,7 +3,7 @@
 #' @description
 #' Start to play a song on your local Spotify from the R console. Standalone this is pretty useless, but makes total sense in **musicplyr**...
 #'
-#' @param track A Spotify track in this format: `"spotify:track:6mYXXXgFZZmk2mgejwSwdN?si"`
+#' @param track A Spotify track in this format: `"spotify:track:6mYXXXgFZZmk2mgejwSwdN"`
 #'
 #' @export
 play_music <- function(track) {

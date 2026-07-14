@@ -1,7 +1,11 @@
+---
+output: github_document
+---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 
 # musicplyr
+
 
 ## Installation
 
@@ -11,3 +15,6 @@ You can install `musicplyr` from [GitHub](https://github.com/) with:
 # install.packages("pak")
 pak::pak("LangeTo/musicplyr")
 ```
+
+## Acknowledgements
+Thanks to the people form [IBSM](https://github.com/AG-Boerries) for inspiration, especially Andreas, Michael, Tom and Tonmoy. 
